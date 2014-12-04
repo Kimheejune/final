@@ -1,3 +1,4 @@
+var andy1, andy2, andy3, andy4;
 var checkDraw = [];
 var drawCount = [];
 function setup() {
@@ -6,6 +7,8 @@ function setup() {
   background(32, 42, 55);
   andy1 = loadImage("1.png");
   andy2 = loadImage("2.png");
+  andy3 = loadImage("3.png");
+  andy4 = loadImage("4.png");
   for(var i = 0; i<4 ;i++){
     checkDraw[i] = true;
     drawCount[i] = 0;
@@ -28,7 +31,7 @@ function draw()
     }
   }
   if(checkDraw[1]){
-   image(2,500,0);
+   image(andy2,500,0);
   }else{
     drawCount[1]++;
     if(drawCount[1] >50){
@@ -37,7 +40,7 @@ function draw()
     }
   }
   if(checkDraw[2]){
-   image(bg,0,500);
+   image(andy3,0,500);
   }else{
     drawCount[2]++;
     if(drawCount[2] >50){
@@ -46,7 +49,7 @@ function draw()
     }
   }
   if(checkDraw[3]){
-   image(bg,500,500);
+   image(andy4,500,500);
   }else{
     drawCount[3]++;
     if(drawCount[3] >50){
