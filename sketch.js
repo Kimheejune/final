@@ -17,7 +17,8 @@ function draw()
 {
  background(32, 42, 55);
  
-
+image = andy(200,200,500,500);
+image = andy2(400,400,500,500);
  fill(255);
  if(checkDraw[0]){
     image(1,0,0);
