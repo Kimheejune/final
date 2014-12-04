@@ -1,4 +1,4 @@
-var andy1, andy2, andy3, andy4; andy5
+var andy1, andy2, andy3, andy4, andy5;
 var checkDraw = [];
 var drawCount = [];
 function setup() {
