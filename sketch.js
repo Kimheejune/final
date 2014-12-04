@@ -68,7 +68,7 @@ fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   noStroke();
  rect(0,500,500,500);
 
-image(andy6,mouseX,mouseY);
+image(andy6,mouseX,mouseY,100,100);
 
 }
 
