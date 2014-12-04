@@ -1,11 +1,11 @@
 var andy1, andy2, andy3, andy4, andy5, andy6;
 var checkDraw = [];
 var drawCount = [];
-
+var sound;
 function setup() {
 
   createCanvas(1000, 1000);
-  
+  sound = loadSound("a.mp3") 
   andy1 = loadImage("1.png");
   andy2 = loadImage("2.png");
   andy3 = loadImage("3.png");
