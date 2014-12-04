@@ -18,6 +18,7 @@ function setup() {
   }   
 amp = new p5.Amplitude();
 amp.setInput(sound);
+sound.loop();
 }
 function draw()
 {
