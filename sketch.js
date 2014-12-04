@@ -44,6 +44,7 @@ function draw()
       drawCount[2]=0;
       checkDraw[2]=true;
     }
+  }
   if(checkDraw[3]){
    image(bg,500,500);
   }else{
@@ -52,6 +53,7 @@ function draw()
       drawCount[3]=0;
       checkDraw[3]=true;
     }
+  }
 }
 
 function mousePressed(){
