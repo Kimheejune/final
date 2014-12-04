@@ -21,8 +21,7 @@ function setup() {
 function draw()
 {
  background(andy5);
- fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
- ellipse(100,100,100,100);
+ 
 
  fill(255);
  if(checkDraw[0]){
@@ -61,6 +60,8 @@ function draw()
       checkDraw[3]=true;
     }
   }
+  fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+ rect(100,100,100,100);
 }
 
 function mousePressed(){
