@@ -1,12 +1,13 @@
-var bg;
+var 1;
+var 2;
 var checkDraw = [];
 var drawCount = [];
 function setup() {
 
   createCanvas(1000, 1000);
   background(32, 42, 55);
-  bg = loadImage("1.png");
-  bg = loadImage("2.png");
+  1 = loadImage("1.png");
+  2 = loadImage("2.png");
   for(var i = 0; i<4 ;i++){
     checkDraw[i] = true;
     drawCount[i] = 0;
