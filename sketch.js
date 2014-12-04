@@ -1,14 +1,15 @@
-var andy1, andy2, andy3, andy4;
+var andy1, andy2, andy3, andy4; andy5
 var checkDraw = [];
 var drawCount = [];
 function setup() {
 
   createCanvas(1000, 1000);
-  background(32, 42, 55);
+  
   andy1 = loadImage("1.png");
   andy2 = loadImage("2.png");
   andy3 = loadImage("3.png");
   andy4 = loadImage("4.png");
+  andy5 = loadImage("5.png");
   for(var i = 0; i<4 ;i++){
     checkDraw[i] = true;
     drawCount[i] = 0;
@@ -17,7 +18,7 @@ function setup() {
 }
 function draw()
 {
- background(32, 42, 55);
+ background(andy5);
  
 
  fill(255);
