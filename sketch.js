@@ -1,6 +1,7 @@
 var andy1, andy2, andy3, andy4, andy5;
 var checkDraw = [];
 var drawCount = [];
+var soundFile;
 function setup() {
 
   createCanvas(1000, 1000);
@@ -14,6 +15,11 @@ function setup() {
     checkDraw[i] = true;
     drawCount[i] = 0;
   }   
+
+function preload() {
+  soundFormats('mp3', 'ogg');
+  soundFile = loadSound('jb.mp3');
+}
 
 }
 function draw()
