@@ -1,11 +1,11 @@
 var andy1, andy2, andy3, andy4, andy5, andy6;
 var checkDraw = [];
 var drawCount = [];
-var sound;
+var sound, amp;
 function setup() {
 
   createCanvas(1000, 1000);
-  sound = loadSound("a.mp3") 
+  sound = loadSound("a.mp3"); 
   andy1 = loadImage("1.png");
   andy2 = loadImage("2.png");
   andy3 = loadImage("3.png");
@@ -16,12 +16,12 @@ function setup() {
     checkDraw[i] = true;
     drawCount[i] = 0;
   }   
-
+amp = new p5.Amplitude();
 }
 function draw()
 {
  background(andy5);
- 
+   
 
  fill(255);
  if(checkDraw[0]){
@@ -76,7 +76,7 @@ fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   noStroke();
  rect(500,0,500,500);
 
-image(andy6,mouseX,mouseY,300,300);
+image(andy6,mouseX,mouseY,amp.getLevel(),amp.getLevel());
 
 }
 
