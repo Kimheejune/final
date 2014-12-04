@@ -2,7 +2,7 @@ var bg;
 
 function setup() {
 
-    createCanvas(1000, 1000);
+    createCanvas(500, 500);
 
     bg = loadImage("momo.png");
     
