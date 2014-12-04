@@ -17,6 +17,7 @@ function setup() {
     drawCount[i] = 0;
   }   
 amp = new p5.Amplitude();
+amp.setInput(sound);
 }
 function draw()
 {
@@ -76,7 +77,7 @@ fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   noStroke();
  rect(500,0,500,500);
 
-image(andy6,mouseX,mouseY,amp.getLevel(),amp.getLevel());
+image(andy6,mouseX,mouseY,10+amp.getLevel()*300,10+amp.getLevel()*300);
 
 }
 
