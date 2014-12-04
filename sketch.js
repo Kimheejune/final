@@ -61,7 +61,7 @@ function draw()
     }
   }
   fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
- rect(100,100,100,100);
+ rect(0,0,500,500);
 }
 
 function mousePressed(){
