@@ -6,6 +6,7 @@ function setup() {
   createCanvas(1000, 1000);
   background(32, 42, 55);
   bg = loadImage("1.png");
+  bg = loadImage("2.png");
   for(var i = 0; i<4 ;i++){
     checkDraw[i] = true;
     drawCount[i] = 0;
@@ -19,7 +20,7 @@ function draw()
 
  fill(255);
  if(checkDraw[0]){
-    image(bg,0,0);
+    image(1,0,0);
   }else{
     drawCount[0]++;
     if(drawCount[0] >50){
@@ -28,7 +29,7 @@ function draw()
     }
   }
   if(checkDraw[1]){
-   image(bg,500,0);
+   image(2,500,0);
   }else{
     drawCount[1]++;
     if(drawCount[1] >50){
