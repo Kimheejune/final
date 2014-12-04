@@ -68,7 +68,15 @@ fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   noStroke();
  rect(0,500,500,500);
 
-image(andy6,mouseX,mouseY,100,100);
+ fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+  noStroke();
+ rect(500,500,500,500);
+
+ fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+  noStroke();
+ rect(500,0,500,500);
+
+image(andy6,mouseX,mouseY,300,300);
 
 }
 
