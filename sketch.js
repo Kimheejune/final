@@ -1,4 +1,4 @@
-var andy1, andy2, andy3, andy4, andy5;
+var andy1, andy2, andy3, andy4, andy5, andy6;
 var checkDraw = [];
 var drawCount = [];
 
@@ -11,6 +11,7 @@ function setup() {
   andy3 = loadImage("3.png");
   andy4 = loadImage("4.png");
   andy5 = loadImage("5.png");
+  andy6 = loadImage("6.png");
   for(var i = 0; i<4 ;i++){
     checkDraw[i] = true;
     drawCount[i] = 0;
@@ -20,7 +21,8 @@ function setup() {
 function draw()
 {
  background(andy5);
- 
+ fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
+ ellipse(100,100,100,100);
 
  fill(255);
  if(checkDraw[0]){
